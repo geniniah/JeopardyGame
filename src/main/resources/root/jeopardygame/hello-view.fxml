@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="root.jeopardygame.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="600.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+      <VBox layoutX="192.0" layoutY="90.0" prefHeight="449.0" prefWidth="155.0">
+         <children>
+            <Button fx:id="questionTwo" mnemonicParsing="false" onAction="#questionTwoClicked" prefHeight="110.0" prefWidth="155.0" text="\$100">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionSix" mnemonicParsing="false" onAction="#questionSixClicked" prefHeight="110.0" prefWidth="155.0" text="\$200">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionTen" mnemonicParsing="false" onAction="#questionTenClicked" prefHeight="110.0" prefWidth="155.0" text="\$300">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionFourt" mnemonicParsing="false" onAction="#questionFourtClicked" prefHeight="110.0" prefWidth="155.0" text="\$400">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="347.0" layoutY="90.0" prefHeight="449.0" prefWidth="155.0">
+         <children>
+            <Button fx:id="questionThree" mnemonicParsing="false" onAction="#questionThreeClicked" prefHeight="110.0" prefWidth="155.0" text="\$100">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionSeven" mnemonicParsing="false" onAction="#questionSevenClicked" prefHeight="110.0" prefWidth="155.0" text="\$200">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionEle" mnemonicParsing="false" onAction="#questionElevenClicked" prefHeight="110.0" prefWidth="155.0" text="\$300">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="503.0" layoutY="90.0" prefHeight="449.0" prefWidth="155.0">
+         <children>
+            <Button fx:id="questionFour" mnemonicParsing="false" onAction="#questionFourClicked" prefHeight="110.0" prefWidth="155.0" text="\$100">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionEight" mnemonicParsing="false" onAction="#questionEightClicked" prefHeight="110.0" prefWidth="155.0" text="\$200">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionTwel" mnemonicParsing="false" onAction="#questionTwelveClicked" prefHeight="110.0" prefWidth="155.0" text="\$300">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="37.0" layoutY="90.0" prefHeight="449.0" prefWidth="155.0">
+         <children>
+            <Button fx:id="questionOne" mnemonicParsing="false" onAction="#questionOneClicked" prefHeight="110.0" prefWidth="155.0" text="\$100">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionFive" mnemonicParsing="false" onAction="#questionFiveClicked" prefHeight="110.0" prefWidth="155.0" text="\$200">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionNine" mnemonicParsing="false" onAction="#questionNineClicked" prefHeight="110.0" prefWidth="155.0" text="\$300">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionThir" mnemonicParsing="false" onAction="#questionThirtClicked" prefHeight="110.0" prefWidth="155.0" text="\$400">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="183.0" layoutY="530.0" prefHeight="80.0" prefWidth="110.0" text="SCORE :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreNumber" layoutX="244.0" layoutY="557.0" prefHeight="27.0" prefWidth="100.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="displaySentence" layoutX="465.0" layoutY="22.0" onDragDetected="#questionOneClicked" prefHeight="68.0" prefWidth="411.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerEntered" layoutX="671.0" layoutY="90.0" prefHeight="27.0" prefWidth="212.0" />
+      <Button fx:id="answerSubmitted" layoutX="725.0" layoutY="131.0" mnemonicParsing="false" onAction="#submitButtonClicked" prefHeight="45.0" prefWidth="90.0" text="Submit" />
+      <Label fx:id="scoreNumber1" layoutX="347.0" layoutY="10.0" prefHeight="59.0" prefWidth="110.0" text="Question:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="commentLabel" alignment="CENTER" layoutX="706.0" layoutY="203.0" prefHeight="45.0" prefWidth="128.0" />
+      <Label fx:id="questionNum" layoutX="620.0" layoutY="549.0" prefHeight="27.0" prefWidth="47.0" textFill="#3792dd" />
+      <Button fx:id="clearScoreButton" layoutX="24.0" layoutY="553.0" mnemonicParsing="false" onAction="#clearScore" prefHeight="34.0" prefWidth="140.0" text="Clear Score" />
+      <Label alignment="CENTER" layoutX="37.0" layoutY="13.0" prefHeight="68.0" prefWidth="286.0" text="Jeopardy">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.517350133661216">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</Pane>
